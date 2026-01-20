@@ -22,8 +22,11 @@ Open [http://localhost:3000](http://localhost:3000)
 | **Lifecycle** | `useEffect` | `onMounted`, `onUnmounted` |
 | **Computed** | `useMemo` | `computed()` |
 | **Side Effects** | `useEffect` | `watch`, `watchEffect` |
+| **Composables** | Custom hooks | Composables |
 | **Routing** | Next.js App Router | Nuxt pages/ |
 | **Data Fetching** | React Query / SWR | `useFetch`, `useAsyncData` |
+| **KeepAlive** | Manual state preservation | `<KeepAlive>` component |
+| **Migration** | - | React → Vue guide |
 
 ## 🔑 Key Differences Cheatsheet
 
@@ -86,31 +89,67 @@ vue-nuxt-tutorial/
 ├── app/
 │   ├── app.vue              # Root component (like _app.tsx)
 │   ├── components/          # Auto-imported components
-│   │   ├── ComparisonCard.vue
-│   │   ├── DemoChild.vue
-│   │   ├── TutorialBasics.vue
-│   │   ├── TutorialState.vue
-│   │   ├── TutorialProps.vue
-│   │   ├── TutorialLifecycle.vue
-│   │   ├── TutorialComputed.vue
-│   │   ├── TutorialRouting.vue
-│   │   └── TutorialDataFetching.vue
+│   │   ├── examples/        # Example components for demos
+│   │   │   ├── ComponentA.vue
+│   │   │   ├── ComponentB.vue
+│   │   │   ├── ComponentC.vue
+│   │   │   ├── DemoChild.vue
+│   │   │   ├── ProfileForm.vue
+│   │   │   └── SettingsForm.vue
+│   │   ├── page-compositions/  # Tutorial page sections
+│   │   │   ├── TutorialBasics.vue
+│   │   │   ├── TutorialState.vue
+│   │   │   ├── TutorialProps.vue
+│   │   │   ├── TutorialLifecycle.vue
+│   │   │   ├── TutorialComputed.vue
+│   │   │   ├── TutorialComposables.vue
+│   │   │   ├── TutorialRouting.vue
+│   │   │   ├── TutorialDataFetching.vue
+│   │   │   ├── TutorialKeepAlive.vue
+│   │   │   └── TutorialMigration.vue
+│   │   └── shared/          # Shared UI components
+│   │       ├── ComparisonCard.vue
+│   │       ├── LiveDemoCard.vue
+│   │       ├── QuizModal.vue
+│   │       ├── StatsView.vue
+│   │       ├── BestPractices.vue
+│   │       └── ThemeToggle.vue
+│   ├── composables/         # Reusable composables
+│   ├── assets/              # Static assets
 │   └── pages/               # File-based routing
 │       ├── index.vue        # /
 │       ├── about.vue        # /about
-│       └── blog/
-│           └── [slug].vue   # /blog/:slug
+│       ├── blog/
+│       │   └── [slug].vue   # /blog/:slug
+│       └── tutorials/
+│           └── [slug].vue   # /tutorials/:slug
 ├── nuxt.config.ts           # Nuxt configuration
 ├── tailwind.config.ts       # TailwindCSS config
+├── global_rules.md          # Project guidelines
+├── APP_PATTERNS.md          # Application patterns
 └── package.json
 ```
 
 ## 🛠️ Tech Stack
 
-- **Nuxt 4** - Vue meta-framework (like Next.js for React)
-- **Vue 3** - Composition API
-- **TypeScript** - Type safety
-- **TailwindCSS** - Utility-first CSS
+- **Nuxt 4.2.2** - Vue meta-framework (like Next.js for React)
+- **Vue 3.5.27** - Composition API with `<script setup>`
+- **TypeScript 5.9.3** - Type safety
+- **TailwindCSS 6.14.0** - Utility-first CSS
+- **pnpm 9.12.3** - Fast, disk space efficient package manager
+
+## ✨ Features
+
+[APP_PATTERNS.md](./APP_PATTERNS.md)
+
+- **Interactive Tutorials** - Step-by-step guides with live code examples
+- **Side-by-Side Comparisons** - React vs Vue code snippets
+- **Live Demos** - Interactive components to test concepts
+- **Quiz System** - Test your knowledge with interactive quizzes
+- **Theme Toggle** - Dark/Light mode support
+- **Statistics Tracking** - Monitor your learning progress
+- **Best Practices** - Learn Vue/Nuxt conventions and patterns
+- **Migration Guide** - Comprehensive React to Vue migration reference
 
 ## 📖 Resources
 
