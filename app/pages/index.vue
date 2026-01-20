@@ -44,7 +44,7 @@ const getTutorialDescription = (id: string) => {
             <NuxtLink to="/">
               <h1 class="text-nowrap text-2xl font-bold tracking-tight text-palantir-text-dark dark:text-white flex items-center gap-3">
               <span class="text-palantir-blue">◉</span>
-              From Next to Nuxt 
+               Next 2 Nuxt 
             </h1>
             </NuxtLink>
             
