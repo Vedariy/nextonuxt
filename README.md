@@ -135,7 +135,7 @@ vue-nuxt-tutorial/
 - **Nuxt 4.2.2** - Vue meta-framework (like Next.js for React)
 - **Vue 3.5.27** - Composition API with `<script setup>`
 - **TypeScript 5.9.3** - Type safety
-- **TailwindCSS 6.14.0** - Utility-first CSS
+- **Nuxt TailwindCSS 6.14.0** - Utility-first CSS
 - **pnpm 9.12.3** - Fast, disk space efficient package manager
 
 ## ✨ Features
