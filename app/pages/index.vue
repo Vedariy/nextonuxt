@@ -38,28 +38,28 @@ const getTutorialDescription = (id: string) => {
 <template>
   <div class="min-h-screen bg-palantir-light text-palantir-text-dark dark:bg-palantir-dark dark:text-palantir-gray-1 font-sans selection:bg-palantir-blue-active selection:text-white transition-colors duration-200">
     <header class="py-6 px-6 border-b border-palantir-light-3 bg-white dark:border-palantir-dark-3 dark:bg-palantir-dark-1 sticky top-0 z-50 shadow-md transition-colors duration-200">
-      <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-top justify-between gap-4">
         <div class="flex items-center gap-4 w-full md:w-auto justify-between">
           <div>
             <NuxtLink to="/">
-              <h1 class="text-2xl font-bold tracking-tight text-palantir-text-dark dark:text-white flex items-center gap-3">
+              <h1 class="text-nowrap text-2xl font-bold tracking-tight text-palantir-text-dark dark:text-white flex items-center gap-3">
               <span class="text-palantir-blue">◉</span>
               From Next to Nuxt 
             </h1>
             </NuxtLink>
             
-            <p class="text-palantir-dark-4 dark:text-palantir-gray-4 text-sm mt-1 font-mono">
-              Vue.js / Nuxt Tutorial <br/>
-              React/Next Developer <span class="text-palantir-dark-4 dark:text-palantir-gray mx-1">→</span> Vue/Nuxt Developer
+            <p class="flex flex-col items-center mt-2 gap-1 text-palantir-dark-4 dark:text-palantir-gray-4 text-sm font-mono">
+              <span class="text-palantir-blue text-nowrap">Vue/Nuxt Tutorial</span>
+              <span class="text-palantir-blue text-nowrap">for React/Next Developer </span>
             </p>
           </div>
           <ThemeToggle class="md:hidden" />
         </div>
         
         <!-- Navigation in Header for Desktop -->
-        <div class="flex items-center gap-4">
-          <ThemeToggle class="hidden md:block" />
+        <div class="flex items-center gap-4 ">
           <nav class="flex flex-wrap gap-2 justify-center">
+            <ThemeToggle class="hidden md:block" />
             <NuxtLink
             v-for="section in sections"
             :key="section.id"

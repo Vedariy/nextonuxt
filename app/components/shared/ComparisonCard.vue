@@ -24,11 +24,11 @@ const quiz = computed(() => props.quizKey ? cardQuizzes[props.quizKey] : null)
       <button 
         v-if="quiz"
         @click="showQuiz = true"
-        class="text-xs font-mono uppercase tracking-wide flex items-center gap-2 px-3 py-2 rounded-lg bg-palantir-blue/10 hover:bg-palantir-blue/20 text-palantir-blue hover:text-white transition-all border border-palantir-blue/30 hover:border-palantir-blue hover:shadow-lg hover:shadow-palantir-blue/20 hover:scale-105"
+        class="text-xs font-mono uppercase tracking-wide flex items-center gap-2 px-3 py-2 rounded-lg bg-palantir-gray-3/70 hover:bg-palantir-blue/20 text-palantir-dark hover:text-white transition-all border border-palantir-blue/30 hover:border-palantir-blue hover:shadow-lg hover:shadow-palantir-blue/20 hover:scale-105"
         title="Проверить знания"
       >
-        <span class="hidden sm:inline">Test Knowledge</span>
-        <span class="text-lg leading-none">🎓</span>
+        <span class="hidden sm:inline">Проверить знания</span>
+        <span class="text-lg leading-none ">🎓</span>
       </button>
     </div>
     
