@@ -1,7 +1,7 @@
 # Vue.js / Nuxt Tutorial for React Developers
 
 Interactive tutorial to help React/Next.js developers quickly learn Vue.js and Nuxt.
-
+Live: [https://nextonuxt.vercel.app/](https://nextonuxt.vercel.app/)
 ## 🚀 Quick Start
 
 ```bash
