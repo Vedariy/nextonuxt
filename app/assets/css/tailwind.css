@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-palantir-dark text-palantir-gray-1 font-sans antialiased;
+  }
+  
+  /* Custom Scrollbar for Palantir look */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    @apply bg-palantir-dark-1;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    @apply bg-palantir-dark-4 rounded;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-palantir-gray-5;
+  }
+}
+
+@layer components {
+  .bp-card {
+    @apply bg-white dark:bg-palantir-dark-1 border border-palantir-light-3 dark:border-palantir-dark-3 p-4 rounded shadow-card-light dark:shadow-card-dark transition-all duration-200;
+  }
+  
+  .bp-button {
+    @apply px-3 py-1.5 rounded font-medium transition-colors duration-150 flex items-center gap-2;
+  }
+  
+  .bp-button-primary {
+    @apply bg-palantir-blue text-white hover:bg-palantir-blue-hover active:bg-palantir-blue-active shadow-sm;
+  }
+  
+  .bp-button-minimal {
+    @apply text-palantir-text-dark dark:text-palantir-gray hover:text-palantir-gray-4 hover:bg-palantir-light-2 dark:hover:bg-palantir-dark-3;
+  }
+
+  .bp-input {
+    @apply bg-white dark:bg-palantir-dark-1 border border-palantir-light-3 dark:border-palantir-dark-3 text-palantir-text-dark dark:text-palantir-gray-4 px-3 py-1.5 rounded focus:outline-none focus:border-palantir-blue focus:ring-1 focus:ring-palantir-blue placeholder-palantir-gray;
+  }
+  
+  .bp-heading {
+    @apply text-palantir-text-dark dark:text-palantir-gray-4 font-semibold tracking-tight;
+  }
+}
