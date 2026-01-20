@@ -115,7 +115,7 @@ const close = () => {
                       ? 'bg-green-500/10 border-green-500/50 text-green-700 dark:text-green-100'
                       : index === selectedOption
                         ? 'bg-red-500/10 border-red-500/50 text-red-700 dark:text-red-100'
-                        : 'bg-palantir-light-2 dark:bg-palantir-dark-2 border-palantir-light-3 dark:border-palantir-dark-3 text-palantir-dark-4 dark:text-palantir-gray-3 opacity-50'
+                        : 'bg-palantir-light-2 dark:bg-palantir-dark-2 border-palantir-light-3 dark:border-palantir-dark-3 text-palantir-dark-4 dark:text-palantir-gray-2 opacity-50'
                     : 'bg-palantir-light-1 dark:bg-palantir-dark-2 border-palantir-light-3 dark:border-palantir-dark-3 text-palantir-text-dark dark:text-palantir-gray-1 hover:bg-palantir-light-2 dark:hover:bg-palantir-dark-3 hover:border-palantir-blue/50 hover:text-palantir-blue dark:hover:text-white'
                 ]"
                 :disabled="isAnswered"
@@ -189,7 +189,7 @@ const close = () => {
               <h4 class="text-2xl font-bold text-palantir-text-dark dark:text-white mb-2">
                 {{ score === quiz.questions.length ? 'Perfect Score! 🎉' : score > quiz.questions.length / 2 ? 'Great Job! 👍' : 'Keep Learning! 📚' }}
               </h4>
-              <p class="text-palantir-text-dark dark:text-palantir-gray-3 text-lg">
+              <p class="text-palantir-text-dark dark:text-palantir-gray-2 text-lg">
                 You got <strong class="text-palantir-text-dark dark:text-white">{{ score }}</strong> out of <strong class="text-palantir-text-dark dark:text-white">{{ quiz.questions.length }}</strong> correct
               </p>
             </div>

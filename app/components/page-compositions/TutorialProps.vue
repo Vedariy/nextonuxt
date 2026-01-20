@@ -402,7 +402,7 @@ emit('unknown', 'data')    // Error: событие не существует
     <LiveDemoCard title="Props & Events">
       <div class="space-y-4">
         <div class="p-4 bg-palantir-dark-2 rounded border border-palantir-dark-3">
-          <p class="text-palantir-gray-3 text-xs font-bold uppercase tracking-wide mb-2">Parent sends message to Child</p>
+          <p class="text-palantir-gray-2 text-xs font-bold uppercase tracking-wide mb-2">Parent sends message to Child</p>
           <input
             v-model="message"
             class="bp-input w-full"
@@ -780,7 +780,7 @@ const newTodo = ref('')
     <LiveDemoCard title="v-model with Complex Data">
       <div class="space-y-6">
         <div class="p-4 bg-palantir-light-2 dark:bg-palantir-dark-2 rounded border border-palantir-light-3 dark:border-palantir-dark-3">
-          <p class="text-palantir-gray-3 text-xs font-bold uppercase tracking-wide mb-3">User Profile</p>
+          <p class="text-palantir-gray-2 text-xs font-bold uppercase tracking-wide mb-3">User Profile</p>
           
           <div class="space-y-3">
             <input 
@@ -819,7 +819,7 @@ const newTodo = ref('')
         </div>
 
         <div class="p-4 bg-palantir-light-2 dark:bg-palantir-dark-2 rounded border border-palantir-light-3 dark:border-palantir-dark-3">
-          <p class="text-palantir-gray-3 text-xs font-bold uppercase tracking-wide mb-3">Todo List</p>
+          <p class="text-palantir-gray-2 text-xs font-bold uppercase tracking-wide mb-3">Todo List</p>
           
           <div class="space-y-2 mb-3">
             <div v-for="(todo, index) in todos" :key="todo.id" class="flex items-center gap-2 group">
@@ -835,7 +835,7 @@ const newTodo = ref('')
               />
               <button 
                 @click="todos.splice(index, 1)"
-                class="px-2 py-1 text-palantir-gray-3 hover:text-red-500 opacity-0 group-hover:opacity-100 transition-all"
+                class="px-2 py-1 text-palantir-gray-2 hover:text-red-500 opacity-0 group-hover:opacity-100 transition-all"
               >
                 ✕
               </button>
@@ -855,7 +855,7 @@ const newTodo = ref('')
         </div>
 
         <div class="p-4 bg-palantir-light-2 dark:bg-palantir-dark-2 rounded border border-palantir-light-3 dark:border-palantir-dark-3">
-          <p class="text-palantir-gray-3 text-xs font-bold uppercase tracking-wide mb-3">Tags (Primitive Array)</p>
+          <p class="text-palantir-gray-2 text-xs font-bold uppercase tracking-wide mb-3">Tags (Primitive Array)</p>
           
           <div class="space-y-2 mb-3">
             <div v-for="(tag, index) in tags" :key="index" class="flex items-center gap-2 group">
@@ -866,7 +866,7 @@ const newTodo = ref('')
               />
               <button 
                 @click="tags.splice(index, 1)"
-                class="px-2 py-1 text-palantir-gray-3 hover:text-red-500 opacity-0 group-hover:opacity-100 transition-all"
+                class="px-2 py-1 text-palantir-gray-2 hover:text-red-500 opacity-0 group-hover:opacity-100 transition-all"
               >
                 ✕
               </button>

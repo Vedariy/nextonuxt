@@ -184,7 +184,7 @@ useHead({
     </nav>
 
     <!-- Footer -->
-    <footer class="text-center py-6 text-palantir-gray border-t border-palantir-light-3 dark:border-palantir-dark-3 bg-white dark:bg-palantir-dark-1">
+    <footer class="text-center py-6 text-palantir-gray-0 border-t border-palantir-light-3 dark:border-palantir-dark-3 bg-white dark:bg-palantir-dark-1">
       <div class="flex items-center justify-center gap-2 text-sm font-mono">
         <span class="w-2 h-2 rounded-full bg-palantir-blue animate-pulse"></span>
         System Status: Operational

@@ -36,7 +36,7 @@ onDeactivated(() => {
       placeholder="Type something in Component A..."
     >
     
-    <div class="text-xs font-mono text-palantir-gray-0 dark:text-palantir-gray-3 space-y-1 p-2 bg-palantir-light-2 dark:bg-palantir-dark-2 rounded border border-palantir-light-3 dark:border-palantir-dark-3">
+    <div class="text-xs font-mono text-palantir-gray-0 dark:text-palantir-gray-2 space-y-1 p-2 bg-palantir-light-2 dark:bg-palantir-dark-2 rounded border border-palantir-light-3 dark:border-palantir-dark-3">
       <div class="flex justify-between">
         <span>Mounted:</span>
         <span class="text-palantir-text-dark dark:text-palantir-gray-1">{{ mountedAt }}</span>

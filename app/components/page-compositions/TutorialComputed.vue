@@ -69,14 +69,14 @@ const fullName = computed(() => {
     <LiveDemoCard title="computed()">
       <div class="grid md:grid-cols-2 gap-4">
         <div>
-          <label class="block text-palantir-gray-3 text-xs font-bold uppercase tracking-wide mb-2">First Name</label>
+          <label class="block text-palantir-gray-1 text-xs font-bold uppercase tracking-wide mb-2">First Name</label>
           <input
             v-model="firstName"
             class="bp-input w-full"
           >
         </div>
         <div>
-          <label class="block text-palantir-gray-3 text-xs font-bold uppercase tracking-wide mb-2">Last Name</label>
+          <label class="block text-palantir-gray-1 text-xs font-bold uppercase tracking-wide mb-2">Last Name</label>
           <input
             v-model="lastName"
             class="bp-input w-full"
@@ -85,7 +85,7 @@ const fullName = computed(() => {
       </div>
       
       <div class="mt-4 p-3 bg-palantir-light-2 dark:bg-palantir-dark-2 rounded border border-palantir-light-3 dark:border-palantir-dark-3 flex items-center gap-2">
-        <span class="text-palantir-gray-1 dark:text-palantir-gray-3">Full Name (computed):</span>
+        <span class="text-palantir-gray-0 dark:text-palantir-gray-2">Full Name (computed):</span>
         <strong class="text-palantir-blue font-medium">{{ fullName }}</strong>
       </div>
     </LiveDemoCard>
@@ -143,7 +143,7 @@ watchPostEffect(() => {
     <!-- Live Demo: watch -->
     <LiveDemoCard title="watch()">
       <div>
-        <label class="block text-palantir-gray-3 text-xs font-bold uppercase tracking-wide mb-2">
+        <label class="block text-palantir-gray-2 text-xs font-bold uppercase tracking-wide mb-2">
           Search (type 3+ chars)
         </label>
         <input
@@ -154,7 +154,7 @@ watchPostEffect(() => {
       </div>
       
       <div v-if="searchResults.length" class="mt-4">
-        <p class="text-palantir-gray-3 text-xs font-bold uppercase tracking-wide mb-2">Results:</p>
+        <p class="text-palantir-gray-2 text-xs font-bold uppercase tracking-wide mb-2">Results:</p>
         <ul class="space-y-1">
           <li 
             v-for="(result, index) in searchResults" 

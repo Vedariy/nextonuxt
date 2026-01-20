@@ -61,7 +61,7 @@ const increment = () => {
         >
           Count: {{ count }}
         </button>
-        <span class="text-palantir-gray-3 text-sm">← Click me!</span>
+        <span class="text-palantir-gray-0 text-sm">← Click me!</span>
       </div>
     </LiveDemoCard>
 

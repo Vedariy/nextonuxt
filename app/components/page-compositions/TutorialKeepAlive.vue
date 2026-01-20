@@ -175,7 +175,7 @@ onUnmounted(() => console.log('Never called'))</pre>
         <div class="text-sm text-palantir-text-dark dark:text-palantir-gray-1 space-y-1">
           <p>💡 <strong>Попробуйте:</strong> Заполните форму → Переключите tab → Вернитесь обратно</p>
           <p>✨ Данные сохранились благодаря <code>keep-alive</code>!</p>
-          <p class="text-xs mt-2 text-palantir-dark-4 dark:text-palantir-gray-3">
+          <p class="text-xs mt-2 text-palantir-dark-4 dark:text-palantir-gray-2">
             Активаций: Profile: {{ activationCount.profile }}, Settings: {{ activationCount.settings }}, Stats: {{ activationCount.stats }}
           </p>
         </div>
@@ -226,7 +226,7 @@ const shouldCache = (key) => {
       <div class="grid lg:grid-cols-2 gap-6">
         <div class="space-y-4">
           <div>
-            <label class="block text-palantir-text-dark dark:text-palantir-gray-3 text-sm mb-2">Include компоненты (будут кешироваться):</label>
+            <label class="block text-palantir-text-dark dark:text-palantir-gray-2 text-sm mb-2">Include компоненты (будут кешироваться):</label>
             <div class="flex gap-2">
               <label v-for="comp in components" :key="comp" class="flex items-center gap-2 text-sm cursor-pointer hover:opacity-80 transition-opacity">
                 <input

@@ -31,9 +31,9 @@ export default {
             5: '#ced9e0',
           },
           gray: {
-            DEFAULT: '#bfccd6',
-            1: '#ced9e0',
-            2: '#d8e1e8',
+            DEFAULT: '#afbcc6',
+            1: '#bec9d0',
+            2: '#d8d1d8',
             3: '#e1e8ed',
             4: '#ebf1f5',
             5: '#f5f8fa',

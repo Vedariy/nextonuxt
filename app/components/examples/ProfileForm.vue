@@ -45,7 +45,7 @@ const updateField = (field: keyof typeof props.modelValue, value: string) => {
     
     <div class="space-y-3">
       <div>
-        <label class="block text-xs font-bold text-palantir-gray-0 dark:text-palantir-gray-3 mb-1 uppercase tracking-wide">Name</label>
+        <label class="block text-xs font-bold text-palantir-gray-0 dark:text-palantir-gray-2 mb-1 uppercase tracking-wide">Name</label>
         <input
           :value="modelValue.name"
           @input="updateField('name', ($event.target as HTMLInputElement).value)"
@@ -55,7 +55,7 @@ const updateField = (field: keyof typeof props.modelValue, value: string) => {
       </div>
       
       <div>
-        <label class="block text-xs font-bold text-palantir-gray-0 dark:text-palantir-gray-3 mb-1 uppercase tracking-wide">Email</label>
+        <label class="block text-xs font-bold text-palantir-gray-0 dark:text-palantir-gray-2 mb-1 uppercase tracking-wide">Email</label>
         <input
           :value="modelValue.email"
           @input="updateField('email', ($event.target as HTMLInputElement).value)"
@@ -66,7 +66,7 @@ const updateField = (field: keyof typeof props.modelValue, value: string) => {
       </div>
       
       <div>
-        <label class="block text-xs font-bold text-palantir-gray-0 dark:text-palantir-gray-3 mb-1 uppercase tracking-wide">Bio</label>
+        <label class="block text-xs font-bold text-palantir-gray-0 dark:text-palantir-gray-2 mb-1 uppercase tracking-wide">Bio</label>
         <textarea
           :value="modelValue.bio"
           @input="updateField('bio', ($event.target as HTMLTextAreaElement).value)"
@@ -77,7 +77,7 @@ const updateField = (field: keyof typeof props.modelValue, value: string) => {
       </div>
     </div>
 
-    <div class="text-xs font-mono text-palantir-gray-0 dark:text-palantir-gray-3 space-y-1 mt-4 p-3 bg-palantir-light-2 dark:bg-palantir-dark-2 border border-palantir-light-3 dark:border-palantir-dark-3 rounded">
+    <div class="text-xs font-mono text-palantir-gray-0 dark:text-palantir-gray-2 space-y-1 mt-4 p-3 bg-palantir-light-2 dark:bg-palantir-dark-2 border border-palantir-light-3 dark:border-palantir-dark-3 rounded">
       <div class="flex justify-between">
         <span>Mounted:</span>
         <span class="text-palantir-text-dark dark:text-palantir-gray-0">{{ mountedAt || 'Not yet' }}</span>

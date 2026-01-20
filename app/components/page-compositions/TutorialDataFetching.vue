@@ -75,7 +75,7 @@ const { data } = await useAsyncData(
           </p>
         </div>
 
-        <div v-else-if="pending" class="p-4 text-palantir-gray-3 text-sm italic flex items-center gap-2">
+        <div v-else-if="pending" class="p-4 text-palantir-gray-2 text-sm italic flex items-center gap-2">
           <span class="w-2 h-2 rounded-full bg-palantir-blue animate-pulse"></span>
           Loading todos...
         </div>

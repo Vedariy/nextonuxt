@@ -6,7 +6,7 @@
   <div class="space-y-8">
     <div class="bp-card">
       <h2 class="text-xl font-bold text-white mb-4">Composables и Архитектура</h2>
-      <p class="text-palantir-gray-4 leading-relaxed">
+      <p class="text-palantir-gray-0 leading-relaxed">
         Nuxt предоставляет мощную систему авто-импорта для composables (хуков) и структурированный архитектурный подход.
         Узнайте, как эффективно организовать вашу логику.
       </p>

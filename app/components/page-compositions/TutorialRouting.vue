@@ -92,7 +92,7 @@ router.back()
     <LiveDemoCard title="Routing">
       <div class="space-y-4">
         <div class="p-3 bg-palantir-light-2 dark:bg-palantir-dark-2 rounded border border-palantir-light-3 dark:border-palantir-dark-3 flex items-center gap-2 text-sm">
-          <span class="text-palantir-gray-1 dark:text-palantir-gray-3">Current route:</span>
+          <span class="text-palantir-gray-1 dark:text-palantir-gray-2">Current route:</span>
           <code class="text-palantir-orange font-mono bg-palantir-light-3 dark:bg-palantir-dark-1 px-2 py-0.5 rounded border border-palantir-light-4 dark:border-palantir-dark-3">{{ route.path }}</code>
         </div>
         

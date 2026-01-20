@@ -69,12 +69,12 @@ onUnmounted(() => {
     <!-- Live Demo -->
     <LiveDemoCard title="Lifecycle">
       <div class="p-3 bg-palantir-light-2 dark:bg-palantir-dark-2 rounded border border-palantir-light-3 dark:border-palantir-dark-3 text-sm">
-        <span class="text-palantir-dark-4 dark:text-palantir-gray-3">🕐 Mounted at:</span> 
+        <span class="text-palantir-dark-4 dark:text-palantir-gray-2">🕐 Mounted at:</span> 
         <strong class="text-palantir-text-dark dark:text-palantir-gray-1 ml-2 font-mono">{{ mountTime }}</strong>
       </div>
       
       <div>
-        <label class="block text-palantir-dark-4 dark:text-palantir-gray-3 text-xs font-bold uppercase tracking-wide mb-2">Type to trigger updates:</label>
+        <label class="block text-palantir-dark-4 dark:text-palantir-gray-2 text-xs font-bold uppercase tracking-wide mb-2">Type to trigger updates:</label>
         <input
           v-model="inputValue"
           class="bp-input w-full"

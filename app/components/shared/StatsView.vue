@@ -62,11 +62,11 @@ const stats = computed(() => [
       >
         <div class="text-xl mb-1 opacity-80">{{ stat.icon }}</div>
         <div class="text-xl font-bold text-palantir-text-dark dark:text-palantir-gray-1 font-mono">{{ stat.value }}</div>
-        <div class="text-xs text-palantir-dark-4 dark:text-palantir-gray-3 uppercase tracking-wide mt-1">{{ stat.label }}</div>
+        <div class="text-xs text-palantir-dark-4 dark:text-palantir-gray-2 uppercase tracking-wide mt-1">{{ stat.label }}</div>
       </div>
     </div>
 
-    <div class="text-xs font-mono text-palantir-dark-4 dark:text-palantir-gray-3 space-y-1 mt-4 p-3 bg-palantir-light-2 dark:bg-palantir-dark-2 border border-palantir-light-3 dark:border-palantir-dark-3 rounded">
+    <div class="text-xs font-mono text-palantir-dark-4 dark:text-palantir-gray-2 space-y-1 mt-4 p-3 bg-palantir-light-2 dark:bg-palantir-dark-2 border border-palantir-light-3 dark:border-palantir-dark-3 rounded">
       <div class="flex justify-between">
         <span>Mounted:</span>
         <span class="text-palantir-text-dark dark:text-palantir-gray-1">{{ mountedAt || 'Not yet' }}</span>

@@ -46,7 +46,7 @@ const getColors = (type: TVpPractice['type']) => {
           <span class="font-bold font-mono mt-0.5">{{ getIcon(practice.type) }}</span>
           <div>
             <h4 class="font-semibold text-palantir-text-dark dark:text-palantir-gray-1 mb-1 text-sm uppercase tracking-wide opacity-90">{{ practice.title }}</h4>
-            <p class="text-palantir-text-dark dark:text-palantir-gray-3 text-sm leading-relaxed">
+            <p class="text-palantir-text-dark dark:text-palantir-gray-2 text-sm leading-relaxed">
               {{ practice.description }}
             </p>
           </div>

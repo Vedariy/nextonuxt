@@ -24,7 +24,7 @@ const quiz = computed(() => props.quizKey ? cardQuizzes[props.quizKey] : null)
       <button 
         v-if="quiz"
         @click="showQuiz = true"
-        class="text-xs font-mono uppercase tracking-wide flex items-center gap-2 px-3 py-2 rounded-lg bg-palantir-gray-3/70 hover:bg-palantir-blue/20 text-palantir-dark hover:text-white transition-all border border-palantir-blue/30 hover:border-palantir-blue hover:shadow-lg hover:shadow-palantir-blue/20 hover:scale-105"
+        class="text-xs font-mono uppercase tracking-wide flex items-center gap-2 px-3 py-2 rounded-lg bg-palantir-gray-3/70 hover:bg-palantir-blue/80 text-palantir-dark hover:text-white transition-all border border-palantir-blue/30 hover:border-palantir-blue hover:shadow-lg hover:shadow-palantir-blue/20 hover:scale-105"
         title="Проверить знания"
       >
         <span class="hidden sm:inline">Проверить знания</span>
@@ -39,7 +39,7 @@ const quiz = computed(() => props.quizKey ? cardQuizzes[props.quizKey] : null)
           <h4 class="text-palantir-blue font-bold flex items-center gap-2 text-sm uppercase tracking-wider">
             <span class="text-xl">⚛️</span> React
           </h4>
-          <span class="text-xs text-palantir-gray-1 dark:text-palantir-gray-4 font-mono">JavaScript</span>
+          <span class="text-xs text-palantir-gray-0 dark:text-palantir-gray-4 font-mono">JavaScript</span>
         </div>
         <div class="bg-palantir-light-3 dark:bg-palantir-dark-2 rounded-lg border border-palantir-light-4 dark:border-palantir-dark-3 p-4 overflow-x-auto group hover:border-palantir-blue/40 hover:shadow-lg hover:shadow-palantir-blue/10 transition-all">
           <code class="text-[#182026] dark:text-palantir-gray-2 font-mono text-sm leading-relaxed whitespace-pre block">
@@ -54,7 +54,7 @@ const quiz = computed(() => props.quizKey ? cardQuizzes[props.quizKey] : null)
           <h4 class="text-[#42b883] font-bold flex items-center gap-2 text-sm uppercase tracking-wider">
             <span class="text-xl">💚</span> Vue / Nuxt
           </h4>
-          <span class="text-xs text-palantir-gray-1 dark:text-palantir-gray-4 font-mono">TypeScript</span>
+          <span class="text-xs text-palantir-gray-0 dark:text-palantir-gray-4 font-mono">TypeScript</span>
         </div>
         <div class="bg-palantir-light-3 dark:bg-palantir-dark-2 rounded-lg border border-palantir-light-4 dark:border-palantir-dark-3 p-4 overflow-x-auto group hover:border-[#42b883]/40 hover:shadow-lg hover:shadow-[#42b883]/10 transition-all">
           <code class="text-[#182026] dark:text-palantir-gray-2 font-mono text-sm leading-relaxed whitespace-pre block">
